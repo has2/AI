@@ -5,19 +5,7 @@ import java.io.IOException;
 public class Chess {
 
 	public static void main(String[] args) throws IOException {
-		
-//		CSP_fwd_chess cspfwd = new CSP_fwd_chess(2);
-//		cspfwd.solve();
-//		for(int a : cspfwd.getLocation())
-//			System.out.print(a+" ");
-//		
-//		
-//		CSP_std_chess cspstd = new CSP_std_chess(2);
-//		cspstd.solve();
-//		for(int a : cspstd.getLocation())
-//			System.out.print(a+" ");
-		
-		
+				
 		int N = Integer.parseInt(args[0]); // N값을 받아옴
 		int[] result_location;             // Solution 값을 받아서 저장할 배열
 		double result_time;				   // 걸린 시간을 저장하는 double형 변수
@@ -63,7 +51,7 @@ public class Chess {
 		}else{
 				cspstd.eTime = System.currentTimeMillis();
 				w_output.write("No solution");
-		}
+		}	
 		
 		
 		/* 걸린시간을 받아서 파일에 출력 */
@@ -71,8 +59,10 @@ public class Chess {
 		w_output.write("\nTotal Elapsed Time : ");
 		w_output.write(Double.toString(result_time) + "초\n\n");
 		
+		
+		
 		/**
-		 * CSP_standard 풀이
+		 * forward checking 풀이
 		 */
 		CSP_fwd_chess cspfwd = new CSP_fwd_chess(N);				//DFS_chess 클래스 생성
 		w_output.write(">CSP with Forward Checking\nLocation : ");			
@@ -91,8 +81,7 @@ public class Chess {
 				cspfwd.eTime = System.currentTimeMillis();
 				w_output.write("No solution");
 		}
-		
-		
+			
 		/* 걸린시간을 받아서 파일에 출력 */
 		result_time = cspfwd.getTime();
 		w_output.write("\nTotal Elapsed Time : ");
@@ -100,7 +89,7 @@ public class Chess {
 		
 		
 		/**
-		 * Arc 풀이
+		 * Arc Consistency 풀이
 		 */
 		CSP_arc_chess csparc = new CSP_arc_chess(N);				//DFS_chess 클래스 생성
 		w_output.write(">CSP with Arc Consistency\nLocation : ");			
