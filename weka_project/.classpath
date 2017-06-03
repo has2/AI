@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/arpack_combined_all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/bounce.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/commons-compress-1.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/core.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/java-cup.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/JFlex.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/junit.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lee Sang Hwa/Desktop/study/coding/Java/weka_project/lib/mtj.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
